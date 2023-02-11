@@ -35,16 +35,33 @@
 
 <details>
   <summary>Client</summary>
- </details>
+  <ul>
+    <li>Ruby on Rails</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li>Ruby on Rails</li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>Postgresql</li>
+  </ul>
+</details>
 
 
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[Make posts]**
-- **[Make comments]**
-- **[Make likes]**
+- We can create, remove, update and delete posts. (CRUD)
+- It has user authentication.
+- It is well designed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +71,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -65,83 +81,40 @@ In order to run this project you need:
 - Ruby
 - Ruby on Rails
 
-<!--
-Example command:
+
 
 ```sh
  gem install rails
 ```
- -->
+
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  $ git clone git@github.com/Bludidi/BlogApp.git
+  $ cd BlogApp
+  $ bundle install
+  $ rails db:create
+  $ rails db:migrate
+  $ rails s
 ```
---->
 
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
 To run tests, run the following command:
-
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+$ rspec.
 ```
---->
 
-### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 
 👤 **Brian Buntu Ludidi**
