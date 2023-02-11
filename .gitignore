@@ -33,4 +33,5 @@
 # Ignore application configuration
 /config/application.yml
 
+# Ignore node_modules
 /node_modules
