@@ -23,11 +23,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog-App] <a name="about-project"></a>
+# 📖 [BlogApp] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[Blog-App]** This is a blog website that allows users to make comments, likes and posts.
+**[BlogApp]** This is a blog website that allows users to create posts, comments and likes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,7 +56,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - We can create, remove, update and delete posts. (CRUD)
 - It has user authentication.
@@ -149,7 +147,6 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
