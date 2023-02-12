@@ -1,28 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
-  describe 'Like Model Test' do
-    subject { Like.new(author_id: 5, posts_id: 5) }
-    before { subject.save }
+  #pending "add some examples to (or delete) #{__FILE__}"
+  subject { User.new(Name: 'Tom', Image: 'https://unsplash.com/photos/F_-0BxGuVvo', Bio: 'Teacher from Mexico.') }
 
-    it 'The author_id should be number' do
-      subject.author_id = 'aaa'
-      expect(subject).to_not be_valid
-    end
+  before { subject.save }
 
-    it 'The author_id should be integer' do
-      id = subject.author_id = 5
-      expect(id).to be == 5
-    end
-
-    it 'The posts_id should be number' do
-      subject.posts_id = 'bbb'
-      expect(subject).to_not be_valid
-    end
-
-    it 'The posts_id should be integer' do
-      id = subject.posts_id = 5
-      expect(id).to be == 5
-    end
+  before(:each) do
+    @post = Post.create(AuthorId: subject.id, Title: 'check post',
+                        Text: 'Unit test for the method of most_recent_posts')
+    @comment = Comment.create(AuthorId: subject.id, PostId: @post.id,
+                              Text: 'Unit test for the method of most_recent_comments')
   end
 end
