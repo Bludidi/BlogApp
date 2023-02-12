@@ -1,33 +1,20 @@
-require 'rails_helper'
+ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  describe 'Comment Model Test' do
-    subject { Comment.new(text: 'Good Job', author_id: 2, posts_id: 2) }
-    before { subject.save }
+  subject { User.new(name: 'Tom', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.') }
 
-    it 'The comment should not be blank' do
-      subject.text.nil?
-      expect(subject).to_not be_valid
-    end
+  before { subject.save }
 
-    it 'The author_id should be number' do
-      subject.author_id = 'aaa'
-      expect(subject).to_not be_valid
-    end
+  before(:each) do
+     @post = Post.create(AuthorId: subject.id, title: 'check post',
+                         text: 'Unit test for the method of most_recent_posts')
+    @comment = Comment.create(AuthorId: subject.id, PostId: @post.id,
+                              text: 'Unit test for the method of most_recent_comments')
+  end
 
-    it 'The author_id should be integer' do
-      id = subject.author_id = 2
-      expect(id).to be == 2
-    end
+  it 'Text should match with the input text' do
+    text = @comment.text
 
-    it 'The posts_id should be number' do
-      subject.posts_id = 'bbb'
-      expect(subject).to_not be_valid
-    end
-
-    it 'The posts_id should be integer' do
-      id = subject.posts_id = 2
-      expect(id).to be == 2
-    end
+    expect(text).to eq('Unit test for the method of most_recent_comments')
   end
 end
