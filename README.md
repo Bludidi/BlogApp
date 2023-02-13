@@ -23,10 +23,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BlogApp] <a name="about-project"></a>
+# 📖 BlogApp <a name="about-project"></a>
 
 
-**[BlogApp]** This is a blog website that allows users to create posts, comments and likes.
+**BlogApp** This is a blog website that allows users to create posts, comments and likes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
