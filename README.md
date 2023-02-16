@@ -92,7 +92,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-  $ git clone git@github.com/Bludidi/BlogApp.git
+  $ git clone https://github.com/Bludidi/BlogApp.git
   $ cd BlogApp
   $ bundle install
   $ rails db:create
