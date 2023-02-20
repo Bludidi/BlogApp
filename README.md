@@ -131,7 +131,7 @@ $ rspec.
   <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
 </a>
 
-<a href="https://www.linkedin.com/in/brian-ludidi-92754174">
+<a href="https://www.linkedin.com/in/brian-ludidi/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
 </a>
 
