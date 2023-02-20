@@ -65,6 +65,12 @@
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Run `rails s` in the terminal and [click here](http://localhost:3000/) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -123,6 +129,16 @@ $ rspec.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Add controllers**
+- [ ] **Rspec for controllers**
+- [ ] **Views**
+- [ ] **Add forms**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -137,9 +153,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+
+If you like this project kindly add ⭐️ to it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +164,8 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank...
+I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

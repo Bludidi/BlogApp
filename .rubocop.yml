@@ -4,6 +4,7 @@ AllCops:
     - "app/**/*"
     - "db/**/*"
     - "bin/*" 
+    - "spec/**/*"
     - "config/**/*"
     - "Guardfile"
     - "Rakefile"
