@@ -132,9 +132,10 @@ $ rspec.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Add controllers]**
-- [ ] **[Rspec for controllers]**
-- [ ] **[Views]**
+- [ ] **Add controllers**
+- [ ] **Rspec for controllers**
+- [ ] **Views**
+- [ ] **Add forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
