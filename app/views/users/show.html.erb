@@ -1,1 +1,29 @@
-<h1>Show user with id:<%=@id%></h1>
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/user.css">
+</head>
+<section class="container">
+<div class="user-profile">
+  <div class="profile-pic">
+    <img src=<%= @user.photo %>alt="user profile pic">
+  </div>
+  <div class="user-name">
+    <h1> <%= link_to @user.name, "/users/#{@user.id}" %> </h1>
+    <div class="right-align">
+      <span >Number of posts: <%= @user.posts_counter %></span>
+    </div>
+  </div>
+</div>
+<div class="user-bio">
+    <span>Bio</span>
+    <br />
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="user-post">
+  <% @posts.each do |post| %>
+  <span>Post: <%= post.title %></span>
+  <br />
+  <p><%= post.text %></p>
+  </div>
+  <% end %>
+</section>
+
