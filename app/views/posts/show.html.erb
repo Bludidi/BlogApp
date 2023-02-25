@@ -1,1 +1,20 @@
-<h1>Showing posts with id: <%=@id%></h1>
+<% @user.posts.each do |post| %>
+<section>
+  <div class="post-info">
+    <span>
+      <%= post.title %> by <%= @user.name %>
+    </span>
+    <div>
+      Comments: <%= post.comments_counter %>  Likes: <%= post.likes_counter %>
+    </div class="post-interaction">
+      <% comments = Comment.where(posts_id: post.id) %>
+      <% comments.each do |comment| %>
+        <span>
+          <% user = User.find_by(id: comment.author_id).name %>
+        </span>
+        <p>
+          <%= user %>: <%= comment.text %>
+        </p>
+  </div>
+  <% end %>
+</section>
