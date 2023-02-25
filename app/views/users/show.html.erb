@@ -14,13 +14,13 @@
   </div>
 </div>
 <div class="user-bio">
-    <span>Bio</span>
+    <span><b>Bio:</b></span>
     <br />
     <p><%= @user.bio %></p>
   </div>
   <div class="user-post">
   <% @user.posts.each do |post| %>
-  <span>Post: <%= post.title %></span>
+  <span><b><%= post.title %></b></span>
   <br />
   <p><%= post.text %></p>
   </div>
