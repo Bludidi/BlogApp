@@ -2,7 +2,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/stylesheets/users.css">
 </head>
 <section class="container">
-  <%@users.each do |user| %>
+  <% @users.each do |user| %>
     <div class="user-profile">
       <div class="profile-pic">
         <img src=<%= user.photo %>alt="user profile pic">

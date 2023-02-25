@@ -1,12 +1,36 @@
+<% @user.posts.each do |post| %>
 <section class="container">
-    <div class="user-profile">
-      <div class="profile-pic">
-        <img src=<%= @user.photo %>alt="user profile pic">
-      </div>
-      <div class="user-name">
-       <h3> <%= @user.name %> </h3>
-        <div class="right-align"><span >Number of posts: <%= @user.posts_counter %></span></div>
-      </div>
+  <div class="user-profile">
+    <div class="profile-pic">
+      <img src=<%= @user.photo %>alt="user profile pic">
     </div>
+    <div class="user-name">
+      <h3> <%= @user.name %> </h3>
+      <div class="right-align"><span >Number of posts: <%= @user.posts_counter %></span></div>
+    </div>
+  </div>
+
+  <div class="post-info">
+    <%= post.title %>
+    <div>
+      <p><%= post.text[0, 200] %>...</p>
+    </div>
+    <div>
+      Comments:<%= post.comments_counter %>
+    </div>
+    <div>
+      Likes:<%= post.likes_counter %>
+    </div>
+    <div>
+      <% comments = Comment.where(posts_id: post.id) %>
+      <% comments.each do |comment| %>
+      <span><% user = User.find_by(id: comment.author_id).name %></span>
+      <p>
+        <%= user %>: <%= comment.text %>
+      </p>
+     </div>
+     <% end %>
+  </div>
   <% end %>
 </section>
+
