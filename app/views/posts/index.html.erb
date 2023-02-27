@@ -9,18 +9,17 @@
     </div>
   </div>
 
-  <div class="post-info">
-  <% @user.posts.each do |post| %>
-    <%= post.title %>
-    <div>
+<% @user.posts.each do |post| %>
+  <div>
+    <div class="post-data">
+      <span><%= post.title %></span>
       <p><%= post.text[0, 200] %>...</p>
+      <div class="right-align">
+        Comments: <%= post.comments_counter %>
+        Likes: <%= post.likes_counter %>
+      </div>
     </div>
-    <div>
-      Comments: <%= post.comments_counter %>
-    </div>
-    <div>
-      Likes: <%= post.likes_counter %>
-    </div>
+
     <div>
       <% comments = Comment.where(post_id: post.id) %>
       <% comments.each do |comment| %>
@@ -28,8 +27,8 @@
       <p>
         <%= user %>: <%= comment.text %>
       </p>
-     </div>
-     <% end %>
+    </div>
+    <% end %>
   </div>
   <% end %>
 </section>

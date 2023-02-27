@@ -1,6 +1,3 @@
-<%# <head>
-  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/user.css">
-</head> %>
 <section class="container">
 <div class="user-profile">
   <div class="profile-pic">
@@ -18,8 +15,8 @@
     <br />
     <p><%= @user.bio %></p>
   </div>
-  <div class="user-post">
   <% @user.posts.each do |post| %>
+  <div class="user-post">
   <span><b><%= post.title %></b></span>
   <br />
   <p><%= post.text %></p>
