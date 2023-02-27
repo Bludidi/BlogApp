@@ -3,7 +3,7 @@
   <% @users.each do |user| %>
     <div class="user-profile">
       <div class="profile-pic">
-        <img src=<%= user.photo %>alt="user profile pic">
+        <%= image_tag("user.png", width: '80em', height: '90em') %>
       </div>
       <div class="user-name">
        <h1> <%= link_to user.name, "/users/#{user.id}" %> </h1>
