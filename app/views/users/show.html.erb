@@ -19,7 +19,7 @@
   <div class="user-post">
   <span><b><%= post.title %></b></span>
   <br />
-  <p><%= post.text %></p>
+  <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
   <% end %>
 </section>

@@ -12,8 +12,8 @@
 <% @user.posts.each do |post| %>
   <div>
     <div class="post-data">
-      <span><%= post.title %></span>
-      <p><%= post.text[0, 200] %>...</p>
+      <span><b><%= post.title.upcase %></b></span>
+      <p><%= truncate(post.text, length: 50, separator: '...') %></p>
       <div class="right-align">
         Comments: <%= post.comments_counter %>
         Likes: <%= post.likes_counter %>
