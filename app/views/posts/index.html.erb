@@ -13,7 +13,7 @@
   <div>
     <div class="post-data">
       <span><b><%= post.title.upcase %></b></span>
-      <p><%= truncate(post.text, length: 50, separator: '...') %></p>
+      <p><%= truncate(post.text, length: 190, separator: '...') %></p>
       <div class="right-align">
         Comments: <%= post.comments_counter %>
         Likes: <%= post.likes_counter %>
