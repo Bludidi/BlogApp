@@ -17,7 +17,7 @@
   </div>
   <% @user.posts.each do |post| %>
   <div class="user-post">
-  <span><b><%= post.title %></b></span>
+  <span><b><%= post.title.upcase %></b></span>
   <br />
   <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
