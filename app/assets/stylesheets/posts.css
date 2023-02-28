@@ -16,7 +16,7 @@
 
 .post-info {
   width: 28em;
-  height: fit-content;
+  height: fit-content; /* stylelint-disable-line */
   border: solid 1px #000;
   padding: 1.6em;
   margin-top: 0.6em;
