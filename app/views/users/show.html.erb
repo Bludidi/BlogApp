@@ -1,7 +1,7 @@
 <section class="container">
 <div class="user-profile">
-  <div class="profile-pic">
-    <%= image_tag("user.png") %>
+  <div class="user-pic">
+    <%= image_tag("user.png", width: '80em', height: '90em') %>
   </div>
   <div class="user-name">
     <h1> <%= link_to @user.name, "/users/#{@user.id}" %> </h1>
