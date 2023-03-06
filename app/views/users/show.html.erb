@@ -21,6 +21,9 @@
   <br />
   <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
+  <%= link_to user_posts_path(@user.id) do %>
+    <button>Show all posts</button>
+  <% end %>
   <% end %>
 </section>
 
