@@ -11,7 +11,7 @@
   height: 10em;
   border: solid 1px #000;
   padding: 1.6em;
-  margin-top: 0.6em;
+  /* margin-top: 0.2em; */
 }
 
 .post-info {
@@ -24,4 +24,12 @@
 
 h3 {
   margin: 0;
+}
+
+.comment-list {
+  width: 30em;
+  height: fit-content; /* stylelint-disable-line */
+  border: solid 1px #000;
+  padding: 1em;
+  margin-top: 0.6em;
 }

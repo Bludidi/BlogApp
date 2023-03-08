@@ -1,7 +1,7 @@
 <section class="container">
   <div class="user-profile">
     <div class="profile-pic">
-      <%= image_tag("user.png") %>
+      <%= image_tag "user.png", class:"dp" %>
     </div>
     <div class="user-name">
       <h3> <%= @user.name %> </h3>
@@ -20,13 +20,13 @@
       </div>
     </div>
 
-    <div>
+    <div class="comment-list">
       <% comments = Comment.where(post_id: post.id) %>
       <% comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
-      <p>
-        <%= user %>: <%= comment.text %>
-      </p>
+      <span>
+        <%= user %>: Comment <%= comment.id %>
+      </span>
     </div>
     <% end %>
   </div>
