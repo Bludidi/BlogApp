@@ -20,6 +20,11 @@
   height: 80%;
 }
 
+.dp {
+  border: solid 1px #000;
+  height: 80%;
+}
+
 .user-name {
   width: 50%;
   height: 80%;

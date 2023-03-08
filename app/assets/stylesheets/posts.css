@@ -1,6 +1,6 @@
 .user-post {
   width: 28em;
-  height: 7em;
+  height: 8.5em;
   border: solid 1px #000;
   padding: 1.6em;
   margin-top: 0.6em;
@@ -11,7 +11,7 @@
   height: 10em;
   border: solid 1px #000;
   padding: 1.6em;
-  /* margin-top: 0.2em; */
+  margin-top: 1em;
 }
 
 .post-info {
@@ -32,4 +32,24 @@ h3 {
   border: solid 1px #000;
   padding: 1em;
   margin-top: 0.6em;
+}
+
+.posts-btn {
+  height: 2.5em;
+  margin-top: 1em;
+  background-color: rgba(2, 126, 2, 0.527);
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px;
+}
+
+.posts-btn:hover {
+  height: 2.5em;
+  margin-top: 1em;
+  color: #fff;
+  background-color: rgba(2, 126, 2, 0.795);
+  cursor: pointer;
+  border: solid 2px rgb(2, 126, 2);
+  border-radius: 5px;
 }

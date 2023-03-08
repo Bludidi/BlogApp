@@ -15,15 +15,18 @@
     <br />
     <p><%= @user.bio %></p>
   </div>
-  <% @user.posts.each do |post| %>
+  <% @user.most_recent_posts.each do |post| %>
   <div class="user-post">
   <span><b><%= post.title.upcase %></b></span>
   <br />
   <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
+  <div class="right-align">
+      Comments: <%= post.comments_counter %>  Likes: <%= post.likes_counter %>
+    </div>
   </div>
-  <%= link_to user_posts_path(@user.id) do %>
-    <button>Show all posts</button>
-  <% end %>
   <% end %>
 </section>
+<%= link_to user_posts_path(@user.id) do %>
+    <button class="posts-btn">Show all posts</button>
+  <% end %>
 
