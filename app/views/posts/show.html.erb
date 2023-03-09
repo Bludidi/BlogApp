@@ -1,1 +1,11 @@
-<h1>Showing posts with id: <%=@id%></h1>
+<section>
+  <div class="post-info">
+    <span class="post-title"><h4>
+      <%= Post %> <%= @post.title %>: by <%= @user.name %></h4>
+    </span>
+    <div class="right-align">
+      Comments: <%= @post.comments_counter %>  Likes: <%= @post.likes_counter %>
+    </div>
+    <p><%= @post.text %></p>
+  </div>
+</section>

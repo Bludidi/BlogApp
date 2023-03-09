@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.user-profile {
+  display: flex;
+  width: 40em;
+  height: 8em;
+}
+
+.user-bio {
+  width: 28em;
+  height: 7em;
+  border: solid 1px #000;
+  padding: 1.6em;
+}
+
+.user-pic {
+  border: solid 1px #000;
+  height: 80%;
+}
+
+.dp {
+  border: solid 1px #000;
+  height: 80%;
+}
+
+.user-name {
+  width: 50%;
+  height: 80%;
+  border: solid 1px #000;
+  margin-left: 2em;
+  padding: 0 0.8em 0 0.8em;
+}
+
+.right-align {
+  text-align: right;
+}
