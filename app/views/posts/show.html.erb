@@ -8,4 +8,25 @@
     </div>
     <p><%= @post.text %></p>
   </div>
+
+  <div>
+    <% comments = Comment.where(post_id: @post.id) %>
+    <% comments.each do |comment| %>
+    <span><% user = User.find_by(id: comment.author_id).name %></span>
+    <span><%= user %>: <%= comment.text %> </span>
+    <% end %>
+  </div>
+
+  <div>
+  <%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id) do |form| %>
+    <%= form.text_field :text %>
+    <%= form.submit "Add comment" %>
+  </div>
+
+  <div>
+    <%= form_with model: @like, url: user_post_likes_path(@user.id, @post.id) do |form| %>
+    <%= form.submit "Add like" %>
+    <% end %>
+  </div>
+  <% end %>
 </section>
