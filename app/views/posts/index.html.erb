@@ -10,7 +10,7 @@
   </div>
 
 <% @user.posts.each do |post| %>
-  <div>
+
     <div class="post-data">
       <span><b><%= post.title.upcase %></b></span>
       <p><%= truncate(post.text, length: 190, separator: '...') %></p>
@@ -28,8 +28,7 @@
         <%= user %>: <%= comment.text %>
       </p>
     </div>
-    <% end %>
-  </div>
+  <% end %>
   <% end %>
 </section>
 

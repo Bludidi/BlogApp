@@ -4,8 +4,9 @@
 
 .user-profile {
   display: flex;
-  width: 40em;
+  width: 35em;
   height: 8em;
+  margin: 0;
 }
 
 .user-bio {
@@ -21,7 +22,7 @@
 }
 
 .user-name {
-  width: 50%;
+  width: 50vw;
   height: 80%;
   border: solid 1px #000;
   margin-left: 2em;
