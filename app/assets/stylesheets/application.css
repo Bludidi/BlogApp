@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_self
  */
- * {
+* {
   box-sizing: border-box;
- }
+}
  
- html {
+html {
   max-width: 600px;
   margin: 0 auto;
   display: flex;
@@ -25,9 +25,4 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 7px 1px rgba(46, 46, 48, 0.61);
- }
-
- /* .container {
-  max-width: 550px;
-  padding: 2em;
- } */
+}
