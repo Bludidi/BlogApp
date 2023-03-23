@@ -20,12 +20,12 @@
   <div class="add-comment">
   <%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id) do |form| %>
     <%= form.text_field :text %>
-    <%= form.submit "Add comment" %>
+    <%= form.submit "Comment" %>
   </div>
 
   <div>
     <%= form_with model: @like, url: user_post_likes_path(@user.id, @post.id) do |form| %>
-    <%= form.submit "Add like" %>
+    <%= form.submit "Like" %>
     <% end %>
   </div>
   <% end %>
