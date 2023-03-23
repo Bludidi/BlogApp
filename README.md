@@ -128,7 +128,7 @@ $ rspec.
 </a> <br />
 
 <a href="https://twitter.com/BB_Ludidi">
-  <img src="https://img.shields.io/twitter/followers/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
+  <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
 </a> <br />
 
 <a href="https://www.linkedin.com/in/brian-ludidi/">
