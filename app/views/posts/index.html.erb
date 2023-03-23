@@ -20,15 +20,17 @@
       </div>
     </div>
 
+    <% comments = Comment.where(post_id: post.id) %>
+    <% if (comments.length > 0) %>
     <div>
-      <% comments = Comment.where(post_id: post.id) %>
+      Comments
       <% comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
       <p>
         <%= user %>: <%= comment.text %>
       </p>
+      <% end %>
     </div>
   <% end %>
   <% end %>
 </section>
-
