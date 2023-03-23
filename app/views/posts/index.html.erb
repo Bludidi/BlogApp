@@ -23,10 +23,11 @@
   <% comments = Comment.where(post_id: post.id) %>
   <% if comments.length > 0 %>
     <div class="comment-list">
+      Comments
       <% comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
       <span>
-        <%= user %>: Comment <%= comment.id %>
+        <%= user %>: <%= comment.text %>
       </span>
     <% end %>
     </div>
