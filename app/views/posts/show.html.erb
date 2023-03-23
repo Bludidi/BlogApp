@@ -21,6 +21,7 @@
   <%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id) do |form| %>
     <%= form.text_field :text %>
     <%= form.submit "Comment" %>
+    <% end %>
   </div>
 
   <div>
@@ -28,5 +29,4 @@
     <%= form.submit "Like" %>
     <% end %>
   </div>
-  <% end %>
 </section>
