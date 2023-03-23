@@ -172,7 +172,9 @@ If you like this project kindly add ⭐️ to it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+***I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+Big shout out to Microverse team for such an wonderful curriculum
+Kudos to my peer whom we travel this journey together.***
 
 
 
