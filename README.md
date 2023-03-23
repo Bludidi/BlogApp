@@ -26,7 +26,7 @@
 # 📖 BlogApp <a name="about-project"></a>
 
 
-**BlogApp** This is a blog website that allows users to create posts, comments and likes.
+**BlogApp** This is a blog website that allows users to create blog posts and they can also comment and likes to the blog posts as well.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,7 +42,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li>Ruby on Rails</li>
+    <li>Localhost:3000</li>
   </ul>
 </details>
 
@@ -57,8 +57,8 @@
 ### Key Features <a name="key-features"></a>
 
 
-- We can create, remove, update and delete posts. (CRUD)
-- It has user authentication.
+- User can create, remove, update and delete posts. (CRUD)
+- Using UI to create database.
 - It is well designed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
