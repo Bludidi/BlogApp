@@ -57,9 +57,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- We can create, remove, update and delete posts. (CRUD)
+- User can create, remove, update and delete posts. (CRUD)
 - It has user authentication.
-- It is well designed.
+- Uses UI to insert data in the database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
