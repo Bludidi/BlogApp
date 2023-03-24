@@ -13,14 +13,14 @@
 
     <div class="post-data">
       <span><b><%= post.title.upcase %></b></span>
-      <p><%= truncate(post.text, length: 190, separator: '...') %></p>
+      <p><%= truncate(post.text, length: 250, separator: '...') %></p>
       <div class="right-align">
         Comments: <%= post.comments_counter %>
         Likes: <%= post.likes_counter %>
       </div>
     </div>
 
-    <% comments = Comment.where(post_id: post.id) %>
+    <% comments = Comment.where(post_id: post.id).order(created_at: :desc).limit(5) %>
     <% if (comments.length > 0) %>
     <div>
       Comments
