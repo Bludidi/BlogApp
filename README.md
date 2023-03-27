@@ -23,10 +23,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BlogApp] <a name="about-project"></a>
+# 📖 BlogApp <a name="about-project"></a>
 
 
-**[BlogApp]** This is a blog website that allows users to create posts, comments and likes.
+**BlogApp** This is a blog website that allows users to create posts, comments and likes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,6 +65,12 @@
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Run `rails s` in the terminal and [click here](http://localhost:3000/) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -92,7 +98,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-  $ git clone git@github.com/Bludidi/BlogApp.git
+  $ git clone https://github.com/Bludidi/BlogApp.git
   $ cd BlogApp
   $ bundle install
   $ rails db:create
@@ -117,9 +123,27 @@ $ rspec.
 
 👤 **Brian Buntu Ludidi**
 
-  - GitHub: [Bludidi](https://github.com/Bludidi)
-  - Twitter: [@BB_Ludidi](https://twitter.com/bb_ludidi)
-  - LinkedIn: [brian-ludidi](https://linkedin.com/in/brian-ludidi)
+- <a href="https://github.com/Bludidi">
+  <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
+</a> 
+
+- <a href="https://twitter.com/BB_Ludidi">
+  <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
+</a> 
+
+- <a href="https://www.linkedin.com/in/brian-ludidi/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
+</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Add controllers**
+- [ ] **Rspec for controllers**
+- [ ] **Views**
+- [ ] **Add forms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,9 +161,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+
+If you like this project kindly add ⭐️ to it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,9 +172,8 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank...
+I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
