@@ -115,7 +115,7 @@ $ rspec.
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Brian Buntu Ludidi**
+![my profile](https://avatars.githubusercontent.com/u/86472119?s=40&v=4) **Brian Buntu Ludidi**
 
 <a href="https://github.com/Bludidi">
   <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
