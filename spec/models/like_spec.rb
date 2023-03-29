@@ -5,6 +5,11 @@ RSpec.describe Like, type: :model do
 
   before { subject.save }
 
+  it 'The post_id should be present' do
+    subject.post_id.nil?
+    expect(subject).to_not be_valid
+  end
+
   it 'The post_id should be an integer' do 
     subject.post_id = '15'
     expect(subject).to_not be_valid
