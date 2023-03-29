@@ -15,7 +15,7 @@ RSpec.describe Post, type: :model do
     expect(subject).to_not be_valid
   end
 
-  it 'The comments_counter should be and integer not less than zero' do
+  it 'The comments_counter should be an integer not less than zero' do
     subject.comments_counter = -1
     expect(subject).to_not be_valid
   end
