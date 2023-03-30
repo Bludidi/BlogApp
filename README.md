@@ -57,9 +57,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- We can create, remove, update and delete posts. (CRUD)
+- Users can create, remove, update and delete posts. (CRUD)
 - It has user authentication.
-- It is well designed.
+- Users will use UI to insert data to the database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,9 +67,10 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Run `rails s` in the terminal and [click here](http://localhost:3000/) 
+Not yet deployed 
+<!-- Run `rails s` in the terminal and [click here](http://localhost:3000/) 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- GETTING STARTED -->
 
@@ -171,7 +172,7 @@ If you like this project kindly add ⭐️ to it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+I would like to thank `Mike Dane` of `Giraffe Academy` and `freeCodeCamp.org` for wonderful tutorials. Big shout out to `Microverse` for an awesome curriculum. Hats off to my coding partners and my peers for a constant support. Without all of you, this project wouldn't be possible successful. 
 
 
 
