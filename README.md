@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Run `rails s` in the terminal and [click here](http://localhost:3000/) 
+Not deployed yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +121,7 @@ $ rspec.
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Brian Buntu Ludidi**
+![my profile](https://avatars.githubusercontent.com/u/86472119?s=40&v=4) **Brian Buntu Ludidi**
 
 - <a href="https://github.com/Bludidi">
   <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
@@ -140,7 +140,6 @@ $ rspec.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Add controllers**
 - [ ] **Rspec for controllers**
 - [ ] **Views**
 - [ ] **Add forms**
@@ -172,7 +171,7 @@ If you like this project kindly add ⭐️ to it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+I would like to thank `Mike Dane` of `Giraffe Academy` and `freeCodeCamp.org` for wonderful tutorials. Big shout out to `Microverse` for an awesome curriculum. Hats off to my coding partners and my peers for a constant support. Without all of you, this project wouldn't be possible successful. 
 
 
 
