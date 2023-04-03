@@ -1,1 +1,37 @@
-<h1>Showing all posts for user with id:<%=@user_id%></h1>
+<section class="container">
+  <div class="user-profile">
+    <div class="profile-pic">
+      <%= image_tag "user.png", class:"dp" %>
+    </div>
+    <div class="user-name">
+      <h3> <%= @user.name %> </h3>
+      <div class="right-align"><span >Number of posts: <%= @user.posts_counter %></span></div>
+    </div>
+  </div>
+
+<% @user.posts.each do |post| %>
+  <div>
+    <div class="post-data">
+      <span><b><%= post.title.upcase %></b></span>
+      <p><%= truncate(post.text, length: 190, separator: '...') %></p>
+      <div class="right-align">
+        Comments: <%= post.comments_counter %>
+        Likes: <%= post.likes_counter %>
+      </div>
+    </div>
+
+  <% comments = Comment.where(post_id: post.id) %>
+  <% if comments.length > 0 %>
+    <div class="comment-list">
+      Comments
+      <% comments.each do |comment| %>
+      <span><% user = User.find_by(id: comment.author_id).name %></span>
+      <span>
+        <%= user %>: <%= comment.text %>
+      </span>
+    <% end %>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+</section>

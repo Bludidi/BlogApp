@@ -57,9 +57,10 @@
 ### Key Features <a name="key-features"></a>
 
 
-- We can create, remove, update and delete posts. (CRUD)
-- It has user authentication.
-- It is well designed.
+- [ ] **User is able to create, remove, update and delete posts. (CRUD)**
+- [ ] **It has user authentication.**
+- [ ] **Users will use UI to insert data to the database.**
+- [ ] **The UI is well designed.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,8 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Run `rails s` in the terminal and [click here](http://localhost:3000/) 
-
+Not deployed yet
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -121,15 +121,15 @@ $ rspec.
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Brian Buntu Ludidi**
+![my profile](https://avatars.githubusercontent.com/u/86472119?s=40&v=4) **Brian Buntu Ludidi**
 
 - <a href="https://github.com/Bludidi">
   <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
-</a> 
-
+</a> <br />
 - <a href="https://twitter.com/BB_Ludidi">
   <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
-</a> 
+
+</a> <br />
 
 - <a href="https://www.linkedin.com/in/brian-ludidi/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
@@ -139,11 +139,9 @@ $ rspec.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **Add controllers**
-- [ ] **Rspec for controllers**
 - [ ] **Views**
 - [ ] **Add forms**
+- [ ] **Add User Authentication**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +170,7 @@ If you like this project kindly add ⭐️ to it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+I would like to thank `Mike Dane` of `Giraffe Academy` and `freeCodeCamp.org` for wonderful tutorials. Big shout out to `Microverse` for an awesome curriculum. Hats off to my coding partners and my peers for a constant support. Without all of you, this project wouldn't be possible successful. 
 
 
 
