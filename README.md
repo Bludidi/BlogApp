@@ -57,9 +57,10 @@
 ### Key Features <a name="key-features"></a>
 
 
-- User can create, remove, update and delete posts. (CRUD)
-- Using UI to create database.
-- It is well designed.
+- [ ] **User is able to create, remove, update and delete posts. (CRUD)**
+- [ ] **It has user authentication.**
+- [ ] **Users will use UI to insert data to the database.**
+- [ ] **The UI is well designed.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,8 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-Run `rails s` in the terminal and [click here](http://localhost:3000/) 
-
+Not deployed yet
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -121,9 +121,9 @@ $ rspec.
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Brian Buntu Ludidi**
+![my profile](https://avatars.githubusercontent.com/u/86472119?s=40&v=4) **Brian Buntu Ludidi**
 
-<a href="https://github.com/Bludidi">
+- <a href="https://github.com/Bludidi">
   <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
 </a> <br />
 
@@ -131,7 +131,10 @@ $ rspec.
   <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
 </a> <br />
 
-<a href="https://www.linkedin.com/in/brian-ludidi/">
+
+</a> <br />
+
+- <a href="https://www.linkedin.com/in/brian-ludidi/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
 </a>
 
@@ -139,11 +142,9 @@ $ rspec.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **Add controllers**
-- [ ] **Rspec for controllers**
 - [ ] **Views**
 - [ ] **Add forms**
+- [ ] **Add User Authentication**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,6 +176,7 @@ If you like this project kindly add ⭐️ to it.
 ***I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
 Big shout out to Microverse team for such an wonderful curriculum
 Kudos to my peer whom we travel this journey together.***
+
 
 
 

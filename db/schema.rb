@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_06_155453) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_03_085517) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_06_155453) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.text "title"
+    t.string "title"
     t.text "text"
     t.integer "comments_counter", default: 0
     t.integer "likes_counter", default: 0
