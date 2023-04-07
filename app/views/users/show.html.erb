@@ -26,10 +26,6 @@
   </div>
   <% end %>
 
-  <%= link_to user_posts_path(@user.id) do %>
-    <button>Show all posts</button>
-    <% end %>
-
   <div>
     <h3>Add new post</h3>
     <%= form_with model: @post, url: user_posts_path(:author_id) do |form| %>
