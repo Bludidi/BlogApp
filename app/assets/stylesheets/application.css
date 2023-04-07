@@ -27,3 +27,7 @@ html {
   justify-content: center;
   box-shadow: 0 0 7px 1px rgba(46, 46, 48, 0.61);
 }
+
+body {
+  width: 100%;
+}

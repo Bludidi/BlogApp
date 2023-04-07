@@ -15,7 +15,7 @@
 }
 
 .post-info {
-  width: 60vw;
+  width: 100%;
   height: fit-content; /* stylelint-disable-line */
   padding: 1.2em;
 }
