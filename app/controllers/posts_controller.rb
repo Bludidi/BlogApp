@@ -18,17 +18,31 @@ class PostsController < ApplicationController
   def new
     @user = User.find(params[:user_id])
     @post = Post.new
-    # redirect_to new_user_post_path(:user_id)
   end
 
   def create
-    user = current_user
-    @post = Post.new(
-      title: params[:title],
-      text: params[:text],
-      author_id: user.id
-    )
-    return unless @post.save
-    redirect_to user_posts_path
+    @user = current_user
+    @post = @user.posts.new(author: @user, title: params[:post][:title], text: params[:post][:text])
+    if @post.save
+      # @post.update_posts_counter
+      flash[:notice] = 'Your post was created successfully'
+      redirect_to user_posts_path(@user)
+    else
+      render :new
+      flash.alert = 'Sorry something went wrong'
+    end
   end
 end
+
+  # def create
+  #   user = current_user
+  #   @post = Post.new(
+  #     title: params[:title],
+  #     text: params[:text],
+  #     author_id: user.id
+  #   )
+  #   puts @post.errors.full_messages
+  #   return unless @post.save
+  #   redirect_to user_posts_path
+  # end
+# end
