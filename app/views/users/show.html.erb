@@ -26,17 +26,12 @@
   </div>
   <% end %>
 
-  <div>
-    <h3>Add new post</h3>
-    <%= form_with model: @post, url: user_posts_path(:author_id) do |form| %>
-      <%= form.text_field :title, placeholder: "Add title" %>
-      <%= form.text_field :text, placeholder: "Add text" %>
-      <%= form.submit %>
-  </div>
-
-  <% end %>
 </section>
-<%= link_to user_posts_path(@user.id) do %>
-    <button class="posts-btn">Show all posts</button>
-  <% end %>
+  <button class="posts-btn">  <%= link_to "Create post", new_user_post_path(@user), class: "posts-btn" %>
+</button>
+
+
+  <button class="posts-btn"><%= link_to"Show all posts", user_posts_path(@user.id), class: "posts-btn"  %></button>
+
+
 
