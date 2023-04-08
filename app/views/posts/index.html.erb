@@ -11,7 +11,7 @@
 
 <% @user.posts.each do |post| %>
 
-    <a href="posts/<%= post.id %>">
+    <a class="post-box" href="posts/<%= post.id %>">
       <div class="post-data">
         <span><b><%= post.title.upcase %></b></span>
         <p><%= truncate(post.text, length: 250, separator: '...') %></p>

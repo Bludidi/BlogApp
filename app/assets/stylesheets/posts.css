@@ -20,6 +20,11 @@
   padding: 1.2em;
 }
 
+.post-box {
+  text-decoration: none;
+  color: #000;
+}
+
 .user-post {
   padding: 1.6em;
 }
