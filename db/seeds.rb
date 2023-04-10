@@ -15,7 +15,6 @@ sixth_user = User.create(name: 'Bob', photo: 'https://images.pexels.com/photos/6
 seventh_user = User.create(name: 'Xi', photo: 'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg', bio: 'Doctor from USA.')
 
 first_post = Post.create(author: second_user, title: 'Hello', text: 'This is my first post')
-second_post = Post.create(author: first_user, title: 'Ola', text: 'I am the first user')
 
 Comment.create(post: first_post, author: first_user, text: 'Hi mary!' )
 Like.create(post: first_post, author: first_user )

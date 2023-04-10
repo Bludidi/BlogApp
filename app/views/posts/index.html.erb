@@ -10,28 +10,29 @@
   </div>
 
 <% @user.posts.each do |post| %>
-  <div>
-    <div class="post-data">
-      <span><b><%= post.title.upcase %></b></span>
-      <p><%= truncate(post.text, length: 190, separator: '...') %></p>
-      <div class="right-align">
-        Comments: <%= post.comments_counter %>
-        Likes: <%= post.likes_counter %>
-      </div>
-    </div>
 
-  <% comments = Comment.where(post_id: post.id) %>
-  <% if comments.length > 0 %>
-    <div class="comment-list">
+    <a class="post-box" href="posts/<%= post.id %>">
+      <div class="post-data">
+        <span><b><%= post.title.upcase %></b></span>
+        <p><%= truncate(post.text, length: 250, separator: '...') %></p>
+        <div class="right-align">
+          Comments: <%= post.comments_counter %>
+          Likes: <%= post.likes_counter %>
+        </div>
+      </div>
+    </a>
+
+    <% comments = Comment.where(post_id: post.id).order(created_at: :desc).limit(5) %>
+    <% if (comments.length > 0) %>
+    <div>
       Comments
       <% comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
-      <span>
+      <p>
         <%= user %>: <%= comment.text %>
-      </span>
-    <% end %>
+      </p>
+      <% end %>
     </div>
-    <% end %>
-  </div>
+  <% end %>
   <% end %>
 </section>

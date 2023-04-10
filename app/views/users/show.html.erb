@@ -1,32 +1,37 @@
 <section class="container">
-<div class="user-profile">
-  <div class="user-pic">
-    <%= image_tag("user.png", width: '80em', height: '90em') %>
-  </div>
-  <div class="user-name">
-    <h1> <%= link_to @user.name, "/users/#{@user.id}" %> </h1>
-    <div class="right-align">
-      <span >Number of posts: <%= @user.posts_counter %></span>
+  <div class="user-profile">
+    <div class="user-pic">
+      <%= image_tag("user.png", width: '80em', height: '90em') %>
+    </div>
+
+    <div class="user-name">
+      <h1> <%= link_to @user.name, "/users/#{@user.id}" %> </h1>
+      <div class="right-align">
+        <span >Number of posts: <%= @user.posts_counter %></span>
+      </div>
     </div>
   </div>
-</div>
-<div class="user-bio">
+
+  <div class="user-bio">
     <span><b>Bio:</b></span>
     <br />
     <p><%= @user.bio %></p>
   </div>
+
   <% @user.most_recent_posts.each do |post| %>
   <div class="user-post">
-  <span><b><%= post.title.upcase %></b></span>
-  <br />
-  <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
-  <div class="right-align">
-      Comments: <%= post.comments_counter %>  Likes: <%= post.likes_counter %>
-    </div>
+    <span><b><%= post.title.upcase %></b></span>
+    <br />
+    <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
   <% end %>
+
 </section>
-<%= link_to user_posts_path(@user.id) do %>
-    <button class="posts-btn">Show all posts</button>
-  <% end %>
+  <button class="posts-btn">  <%= link_to "Create post", new_user_post_path(@user), class: "posts-btn" %>
+</button>
+
+
+  <button class="posts-btn"><%= link_to"Show all posts", user_posts_path(@user.id), class: "posts-btn"  %></button>
+
+
 

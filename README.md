@@ -26,7 +26,7 @@
 # 📖 BlogApp <a name="about-project"></a>
 
 
-**BlogApp** This is a blog website that allows users to create posts, comments and likes.
+**BlogApp** This is a blog website that allows users to create blog posts and they can also comment and likes to the blog posts as well.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,7 +42,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li>Ruby on Rails</li>
+    <li>Localhost:3000</li>
   </ul>
 </details>
 
@@ -125,11 +125,11 @@ $ rspec.
 
 - <a href="https://github.com/Bludidi">
   <img src="https://img.shields.io/github/followers/Bludidi?label=Follow%20%40Bludidi&style=social" alt="GitHub Follow">
-</a> <br />
+</a>
+
 - <a href="https://twitter.com/BB_Ludidi">
   <img src="https://img.shields.io/twitter/follow/BB_Ludidi?label=Follow%20%40BB_Ludidi&style=social" alt="Twitter Follow">
-
-</a> <br />
+</a>
 
 - <a href="https://www.linkedin.com/in/brian-ludidi/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=social&logo=linkedin&logoColor=blue" alt="LinkedIn">
@@ -170,7 +170,10 @@ If you like this project kindly add ⭐️ to it.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank `Mike Dane` of `Giraffe Academy` and `freeCodeCamp.org` for wonderful tutorials. Big shout out to `Microverse` for an awesome curriculum. Hats off to my coding partners and my peers for a constant support. Without all of you, this project wouldn't be possible successful. 
+***I would like to thank Mike Dane of Giraffe Academy and freeCodeCamp.org
+Big shout out to Microverse team for such an wonderful curriculum
+Kudos to my peer whom we travel this journey together.***
+
 
 
 
