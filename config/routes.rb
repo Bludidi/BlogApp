@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     end
   end
   post '/users/:user_id/posts/new', to: 'posts#create', as: 'create_post'
+  get '/users/:user_id/posts/:post_id/comments/:id', to: 'comments#show', as: 'comment'
 end
