@@ -7,9 +7,9 @@
         <%= image_tag("user.png", width: '80em', height: '90em') %>
       </div>
       <div class="user-name">
-        <h1 class=""> <%= link_to user.name, "/users/#{user.id}" %> </h1>
+        <h1 class=""> <%= user.name %> </h1>
       </div>
-      <div class="right-align ">
+      <div class="right-align">
         <span class="n-o-p">Number of posts: <%= user.posts_counter %></span>
       </div>
     </div>
