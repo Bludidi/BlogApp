@@ -4,9 +4,16 @@
 
 .user-profile {
   display: flex;
-  width: 35em;
-  height: 8em;
-  margin: 0;
+  width: 100%;
+  height: 10%;
+  justify-items: center;
+  align-items: center;
+  margin: 0 0 3em 0;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: solid 1px rgba(199, 197, 197, 0.712);
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px rgba(46, 46, 48, 0.61);
 }
 
 .user-bio {
@@ -21,13 +28,24 @@
 }
 
 .user-name {
-  width: 50vw;
+  display: flex;
+  column-gap: 5em;
+  width: 50%;
   height: 80%;
-  border: solid 1px #000;
-  margin-left: 2em;
+  margin-left: 1em;
   padding: 0 0.8em 0 0.8em;
 }
 
-.right-align {
-  text-align: right;
+a {
+  text-decoration: none;
+  color: #00aeef;
+}
+
+.n-o-p {
+  /* margin-left: 18%; */
+  /* text-align: right; */
+  font-size: small;
+  height: 100%;
+  align-content: end;
+  justify-content: end;
 }
