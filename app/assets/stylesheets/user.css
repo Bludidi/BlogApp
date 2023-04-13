@@ -28,7 +28,6 @@
 }
 
 .user-name {
-  /* display: flex; */
   text-align: center;
   column-gap: 5em;
   width: 50%;
