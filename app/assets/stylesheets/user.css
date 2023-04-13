@@ -42,8 +42,6 @@ a {
 }
 
 .n-o-p {
-  /* margin-left: 18%; */
-  /* text-align: right; */
   color: #fff;
   background-color: #00aeef;
   font-size: small;
@@ -54,3 +52,4 @@ a {
   padding: 0.6em;
   border-radius: 4px;
 }
+
