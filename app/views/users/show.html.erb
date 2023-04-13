@@ -1,23 +1,16 @@
 <section class="container">
-  <div class="user-profile">
-    <div class="user-pic">
-      <%= image_tag("user.png", width: '80em', height: '90em') %>
-    </div>
-
-    <div class="user-name">
-      <h1> <%= link_to @user.name, "/users/#{@user.id}" %> </h1>
-      <div class="right-align">
-        <span >Number of posts: <%= @user.posts_counter %></span>
-      </div>
-    </div>
-  </div>
-
+  <%# <div class="user-profile">
+    
+  </div> %>
+<%= render partial: "partials/user", locals: {user: @user} %>
   <div class="user-bio">
-    <span><b>Bio:</b></span>
-    <br />
+    <span class="bio-span"><b>Bio:</b></span>
+    <hr />
     <p><%= @user.bio %></p>
   </div>
 
+  <div class="posts-section">
+    <div class="posts-span"><span>Posts</span><hr /></div>
   <% @user.most_recent_posts.each do |post| %>
   <div class="user-post">
     <span><b><%= post.title.upcase %></b></span>
@@ -25,6 +18,7 @@
     <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
   <% end %>
+  </div>
 
 </section>
   <button class="posts-btn">  <%= link_to "Create post", new_user_post_path(@user), class: "posts-btn" %>

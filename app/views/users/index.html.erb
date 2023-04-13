@@ -1,18 +1,6 @@
 
 <section class="container">
-  <% @users.each do |user| %>
-  <a href="/users/<%= user.id%>">
-    <div class="user-profile">
-      <div class="profile-pic">
-        <%= image_tag("user.png", width: '80em', height: '90em') %>
-      </div>
-      <div class="user-name">
-        <h1 class=""> <%= user.name %> </h1>
-      </div>
-      <div class="right-align">
-        <span class="n-o-p">Number of posts: <%= user.posts_counter %></span>
-      </div>
-    </div>
-  </a>
+<% @users.each do |user| %>
+  <%= render partial: "partials/user", locals: {user: user} %>
   <% end %>
 </section>
