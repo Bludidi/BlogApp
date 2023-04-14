@@ -2,7 +2,7 @@
   <%# <div class="user-profile">
     
   </div> %>
-<%= render partial: "partials/user", locals: {user: @user} %>
+  <%= render partial: "partials/user", locals: {user: @user} %>
   <div class="user-bio">
     <span class="bio-span"><b>Bio:</b></span>
     <hr />
@@ -10,7 +10,8 @@
   </div>
 
   <div class="posts-section">
-    <div class="posts-span"><span>Posts</span><hr /></div>
+  <% if @user.posts.any? %>
+    <div class="posts-span"><span>Posts</span><hr /></div>  
   <% @user.most_recent_posts.each do |post| %>
   <div class="user-post">
     <span><b><%= post.title.upcase %></b></span>
@@ -18,14 +19,21 @@
     <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
   </div>
   <% end %>
+  <% else %>
+  <div class="posts-span">
+  <span>Posts</span><hr />
+  <div class="user-post">
+  <p>No posts by <%=@user.name %> yet.</p>
   </div>
-
+  <% end %>
+  </div>
+  </div>
 </section>
-  <button class="posts-btn">  <%= link_to "Create post", new_user_post_path(@user), class: "posts-btn" %>
-</button>
+<hr />
 
-
-  <button class="posts-btn"><%= link_to"Show all posts", user_posts_path(@user.id), class: "posts-btn"  %></button>
-
-
+<div class="user-post-btns">
+  <%= button_to "Create post", new_user_post_path(@user), method: :get, class: "btn btn-primary posts-btn" %>
+  <%= button_to"Show all posts", user_posts_path(@user.id), method: :get, class: "posts-btn" %>
+  <%= button_to"Back", users_path(@users), method: :get, class: "posts-btn" %>
+</div>
 
