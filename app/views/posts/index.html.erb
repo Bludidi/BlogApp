@@ -1,13 +1,5 @@
 <section class="container">
-  <div class="user-profile">
-    <div class="profile-pic">
-      <%= image_tag "user.png", class:"dp" %>
-    </div>
-    <div class="user-name">
-      <h3> <%= @user.name %> </h3>
-      <div class="right-align"><span >Number of posts: <%= @user.posts_counter %></span></div>
-    </div>
-  </div>
+  <%= render partial: "partials/user", locals: {user: @user} %>
 
 <% @user.posts.each do |post| %>
 
@@ -35,4 +27,9 @@
     </div>
   <% end %>
   <% end %>
+
+  <div class="user-post-btns">
+  <%= button_to "Create post", new_user_post_path(@user), method: :get, class: "btn btn-primary posts-btn" %>
+  <%= button_to"Back", user_path(@user), method: :get, class: "posts-btn" %>
+</div>
 </section>
