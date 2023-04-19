@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
   def create
     @user = current_user
-    @post = @user.posts.new(author: @user, title: params[:post][:title], text: params[:post][:text])
+     @post = Post.new(author: @user, title: params[:post][:title], text: params[:post][:text])
     if @post.save
       # @post.update_posts_counter
       flash[:notice] = 'Your post was created successfully'

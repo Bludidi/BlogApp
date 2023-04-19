@@ -1,6 +1,6 @@
  <div class="new-post">
     <h3>Add new post</h3>
-    <%= form_with model: @post, url: new_user_post_path(@user) do |form| %>
+    <%= form_with model: @post, url: new_user_post_path(:user_id) do |form| %>
       <%= form.text_field :title, placeholder: "Add title" %>
       <%= form.text_field :text, placeholder: "Add text" %>
       <%= form.submit %>
