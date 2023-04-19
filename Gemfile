@@ -77,4 +77,6 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'figaro'
 
+gem 'launchy'
+
 # gem 'rspec-rails', '~> 4.0'

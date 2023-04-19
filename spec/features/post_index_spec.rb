@@ -14,7 +14,7 @@ RSpec.describe 'post index page', type: :feature do
       @comment2 = Comment.create(text: 'Second comment', author_id: @user1.id, post_id: @post1.id)
       @comment3 = Comment.create(text: 'Third comment', author_id: @user1.id, post_id: @post1.id)
     
-      visit user_posts_path(@user1, @post1)
+      visit user_posts_path(@user1)
     end
 
     it 'Displays user image' do
