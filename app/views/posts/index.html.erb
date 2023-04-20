@@ -30,6 +30,7 @@
 
   <div class="user-post-btns">
   <%= button_to "Create post", new_user_post_path(@user), method: :get, class: "btn btn-primary posts-btn" %>
+  <%= button_to"Pagination", users_path, method: :get, class: "posts-btn" %>
   <%= button_to"Back", user_path(@user), method: :get, class: "posts-btn" %>
 </div>
 </section>

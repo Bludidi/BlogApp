@@ -10,23 +10,25 @@
   </div>
 
   <div class="posts-section">
-  <% if @user.posts.any? %>
+    <% if @user.posts.any? %>
     <div class="posts-span"><span>Posts</span><hr /></div>  
-  <% @user.most_recent_posts.each do |post| %>
-  <div class="user-post">
-    <span><b><%= post.title.upcase %></b></span>
-    <br />
-    <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
-  </div>
-  <% end %>
-  <% else %>
-  <div class="posts-span">
-  <span>Posts</span><hr />
-  <div class="user-post user-post1">
-  <p>No posts by <%=@user.name %> yet.</p>
-  </div>
-  <% end %>
-  </div>
+    <% @user.most_recent_posts.each do |post| %>
+    <a class="post-box" href="<%= @user.id %>/posts/<%= post.id %>">
+    <div class="user-post">
+      <span><b><%= post.title.upcase %></b></span>
+      <br />
+      <p><%= truncate(post.text, length: 110, seperator: '...') %></p>
+    </div>
+    </a>
+    <% end %>
+    <% else %>
+    <div class="posts-span">
+      <span>Posts</span><hr />
+      <div class="user-post user-post1">
+        <p>No posts by <%=@user.name %> yet.</p>
+      </div>
+      <% end %>
+    </div>
   </div>
 </section>
 <hr />

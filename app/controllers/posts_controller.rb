@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
   def index
     user_id = params[:user_id]
-    @user = User.find(params[:user_id])
-    @posts = Post.where(author_id: user_id)
+    @user = User.includes(posts: { comments: [:author]}).find(user_id)
+    @posts = @user.posts
     @recent_user = current_user
   end
 
@@ -10,19 +10,18 @@ class PostsController < ApplicationController
     user_id = params[:user_id]
     post_id = params[:id]
     @user = User.find(user_id)
-    @post = Post.find(post_id)
-    @comments = Comment.where(post_id)
+    @post = @user.posts.includes(:comments).find(post_id)
+    @comments = @post.comments
     @recent_user = current_user
   end
 
   def new
-    @user = User.find(params[:user_id])
     @post = Post.new
   end
 
   def create
     @user = current_user
-    @post = @user.posts.new(author: @user, title: params[:post][:title], text: params[:post][:text])
+     @post = Post.new(author: @user, title: params[:post][:title], text: params[:post][:text])
     if @post.save
       # @post.update_posts_counter
       flash[:notice] = 'Your post was created successfully'
@@ -33,16 +32,3 @@ class PostsController < ApplicationController
     end
   end
 end
-
-  # def create
-  #   user = current_user
-  #   @post = Post.new(
-  #     title: params[:title],
-  #     text: params[:text],
-  #     author_id: user.id
-  #   )
-  #   puts @post.errors.full_messages
-  #   return unless @post.save
-  #   redirect_to user_posts_path
-  # end
-# end
