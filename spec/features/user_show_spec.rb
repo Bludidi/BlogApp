@@ -41,15 +41,7 @@ RSpec.describe 'users/show.html.rb', type: :feature do
       expect(page).to have_button('Show all posts')
     end
 
-    # it 'redirect to post show page' do
-    #   visit user_posts_path(@user1)
-    #   click_link @post1.text
-    #   expect(page).to have_current_path user_post_path(@user1, @post1)
-    # end
-
     it 'redirects to post show page' do
-      # visit user_path(@user1.id)
-      save_and_open_page
       click_link @post1.text
       expect(page).to have_current_path user_post_path(@user1.id, @post1)
     end
