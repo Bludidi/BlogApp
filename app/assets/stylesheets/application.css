@@ -50,4 +50,12 @@ form {
   text-align: center;
 }
 
+.check {
+  margin: 1em 0 2em 0;
+  justify-self: left;
+}
 
+.input-div {
+  text-align: left;
+  margin-top: 1em;
+}
