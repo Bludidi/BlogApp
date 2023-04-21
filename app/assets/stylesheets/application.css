@@ -35,11 +35,10 @@ body {
 /* Sign up, log in and reset password page */
 
 form {
-  border: solid 1px #00000044;
+  border: solid 1px #0004;
   padding: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #008fef;
-  /* text-align: center; */
   row-gap: 2em;
 }
 
