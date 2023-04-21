@@ -31,3 +31,23 @@ html {
 body {
   width: 100%;
 }
+
+/* Sign up, log in and reset password page */
+
+form {
+  border: solid 1px #00000044;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #008fef;
+  /* text-align: center; */
+  row-gap: 2em;
+}
+
+.log-in-btn,
+.heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
