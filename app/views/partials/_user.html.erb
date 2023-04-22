@@ -1,4 +1,5 @@
-<%= link_to user_path(user.id) do %>
+<% if user.present? %>
+  <%= link_to user_path(user.id) do %>
     <div class="user-profile">
       <div class="profile-pic">
         <%= image_tag("user.png", width: '80em', height: '90em') %>
@@ -11,3 +12,4 @@
       </div>
     </div>
     <% end %>
+<% end %>
