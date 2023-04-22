@@ -79,4 +79,8 @@ gem 'figaro'
 
 gem 'launchy'
 
+gem 'devise'
+
+gem 'letter_opener', group: :development
+
 # gem 'rspec-rails', '~> 4.0'
