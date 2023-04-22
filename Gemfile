@@ -83,4 +83,4 @@ gem 'devise'
 
 gem 'letter_opener', group: :development
 
-# gem 'rspec-rails', '~> 4.0'
+gem 'cancancan'
