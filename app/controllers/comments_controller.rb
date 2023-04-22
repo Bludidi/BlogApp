@@ -1,18 +1,19 @@
 class CommentsController < ApplicationController
   load_and_authorize_resource
-  def new
-    @comment = Comment.new
-    @post = Post.find(params[:post_id])
-  end
+  # def new
+  #   @comment = Comment.new
+  #   @post = Post.find(params[:post_id])
+  # end
 
   def create
-    @comment = Comment.new(comment_params)
-    @comment.author = current_user
-    @comment.post = Post.find(params[:post_id])
+    user = current_user
+    @comment = Comment.new(text: params[:text], post: Post.find(params[:post_id]), author_id: user.id)
+    # @comment.author = current_user
+    # post = Post.find(params[:post_id])
     
     return unless @comment.save
 
-    redirect_to user_post_path(current_user.id, params[:post_id])
+    redirect_to user_posts_path(user.posts)
   end
 
   def destroy
@@ -26,9 +27,9 @@ class CommentsController < ApplicationController
     redirect_to user_post_path(@post.author, @post)
   end
 
-  private
+  # private
 
-  def comment_params
-    params.require(:comment).permit(:text)
-  end
+  # def comment_params
+  #   params.require(:comment).permit(:text)
+  # end
 end

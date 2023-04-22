@@ -12,10 +12,13 @@
   <div class="comments-list">
     <% comments = Comment.where(post_id: @post.id) %>
     <% comments.each do |comment| %>
+    <p class="comments-head"><b>Comments</b></p>
     <span><% user = User.find_by(id: comment.author_id).name %></span>
     <span><%= user %>: <%= comment.text %> </span>
-    <% end %>
+
   </div>
+  <%= button_to 'Delete comment', comment_destroy_path(@post.author_id, @post, comment), method: :delete, class: "posts-btn" %>
+    <% end %>
 
   <div class="add-comment">
   <%= form_with model: @comment, url: user_post_comments_path(@user.id, @post.id) do |form| %>

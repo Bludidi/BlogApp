@@ -35,11 +35,20 @@ body {
 /* Sign up, log in and reset password page */
 
 form {
-  border: solid 1px #0004;
   padding: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #008fef;
   row-gap: 2em;
+}
+
+.comments-list {
+  border: solid 1px #0004;
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.comments-head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .log-in-btn,

@@ -14,11 +14,14 @@
       </div>
     </a>
 
+     
+    <%= button_to 'Delete', "/users/#{post.author_id}/posts/#{post.id}", :method => :delete, class: "posts-btn" %>
+  
     <% comments = Comment.where(post_id: post.id).order(created_at: :desc).limit(5) %>
     <% if (comments.length > 0) %>
     <div>
       Comments
-      <% comments.each do |comment| %>
+      <% most_recent_comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
       <p>
         <%= user %>: <%= comment.text %>
