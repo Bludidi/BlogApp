@@ -32,7 +32,7 @@
   column-gap: 3em;
   justify-content: center;
   align-content: center;
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 
 .posts-btn {
@@ -53,7 +53,7 @@
 }
 
 .user-post {
-  padding: 1.2em 0 0.6em 1.2em;
+  padding: 1.2em 1.2em 0.6em 1.2em;
   background-color: rgba(0, 175, 239, 0.082);
   border: none;
   font-size: small;
