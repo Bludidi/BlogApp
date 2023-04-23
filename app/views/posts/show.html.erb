@@ -3,10 +3,10 @@
     <span class="post-title"><h4>
       <% Post %> <%= @post.title %>: by <%= @user.name %></h4>
     </span>
+    <p><%= @post.text %></p>
     <div class="right-align">
       Comments: <%= @post.comments_counter %>  Likes: <%= @post.likes_counter %>
     </div>
-    <p><%= @post.text %></p>
   </div>
 
   <div class="comments-list">

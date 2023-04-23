@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .post-data,
 .post-info,
 .user-post {
   width: 100%;
-  border: solid 1px #000;
+  border: solid 1px #00000052;
   margin-top: 0.6em;
 }
 

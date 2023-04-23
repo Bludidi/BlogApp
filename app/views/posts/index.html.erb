@@ -21,7 +21,7 @@
     <% if (comments.length > 0) %>
     <div>
       Comments
-      <% most_recent_comments.each do |comment| %>
+      <% comments.each do |comment| %>
       <span><% user = User.find_by(id: comment.author_id).name %></span>
       <p>
         <%= user %>: <%= comment.text %>
@@ -30,6 +30,8 @@
     </div>
   <% end %>
   <% end %>
+
+  <hr />
 
   <div class="user-post-btns">
   <%= button_to "Create post", new_user_post_path(@user), method: :get, class: "btn btn-primary posts-btn" %>
