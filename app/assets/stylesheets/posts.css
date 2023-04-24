@@ -13,12 +13,17 @@
 
 .post-data {
   padding: 0.5em 1.2em;
+  background-color: #d6d9dbad;
+  font-size: 0.8em;
+  /* color: #fff; */
 }
 
 .post-info {
   width: 100%;
   height: fit-content; /* stylelint-disable-line */
   padding: 1.2em;
+  background-color: #d6d9dbad;
+  line-height: 1.5;
 }
 
 .post-box {
